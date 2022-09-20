@@ -1,0 +1,28 @@
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/maven-v4_0_0.xsd">
+
+    <modelVersion>4.0.0</modelVersion>
+    <groupId>cz.vondr</groupId>
+    <artifactId>maven-dependency-download</artifactId>
+    <version>1.0.0</version>
+
+    <properties>
+        <dep.group>org.apache.commons</dep.group>
+        <dep.artifact>commons-lang3</dep.artifact>
+        <dep.version>3.12.0</dep.version>
+        <dep.type>jar</dep.type>
+        <dep.classifier></dep.classifier>
+    </properties>
+
+    <dependencies>
+        <dependency>
+            <groupId>${dep.group}</groupId>
+            <artifactId>${dep.artifact}</artifactId>
+            <version>${dep.version}</version>
+            <type>${dep.type}</type>
+            <classifier>${dep.classifier}</classifier>
+        </dependency>
+    </dependencies>
+
+</project>
+
