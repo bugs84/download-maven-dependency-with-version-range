@@ -17,6 +17,10 @@ Must be executed in directory with pom.xml.
 ## Custom repository 
 Custom repository can be defined in your _settings.xml_ file.
 
+## Notes
+This will download artifact and all it's dependencies - if artifact has any.
+
+
 # Alternative solutions
 
 ### maven-dependency-plugin:get
