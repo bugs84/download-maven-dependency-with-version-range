@@ -1,18 +1,18 @@
 # Description
 Purpose is to have command to download maven dependency. With support for version ranges.
 
-# examples  
+# Examples  
 Can be executed in windows "cmd" (mvn has to be installed).  
 Must be executed in directory with pom.xml.
 
 #### Just all default
-`mvn dependency:copy-dependencies -DoutputDirectory=./downloaded-dependencies`
+`mvn dependency:copy-dependencies "-DoutputDirectory=./downloaded-dependencies"`
                                            
 #### Support for version ranges e.g **[1.0,2.0)**
-`mvn dependency:copy-dependencies -DoutputDirectory=./downloaded-dependencies -Ddep.group="org.apache.logging.log4j" -Ddep.artifact="log4j-api" -Ddep.version="[2.17.1,)"`
+`mvn dependency:copy-dependencies "-DoutputDirectory=./downloaded-dependencies" -Ddep.group="org.apache.logging.log4j" -Ddep.artifact="log4j-api" -Ddep.version="[2.17.1,)"`
 
 #### With artifact type
-`mvn dependency:copy-dependencies -DoutputDirectory=./downloaded-dependencies -Ddep.group="org.apache.logging.log4j" -Ddep.artifact="log4j-api" -Ddep.version="[2.17.1,)" -Ddep.type=pom`
+`mvn dependency:copy-dependencies "-DoutputDirectory=./downloaded-dependencies" -Ddep.group="org.apache.logging.log4j" -Ddep.artifact="log4j-api" -Ddep.version="[2.17.1,)" -Ddep.type=pom`
 
 ## Custom repository 
 Custom repository can be defined in your _settings.xml_ file.
