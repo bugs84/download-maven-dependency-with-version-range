@@ -18,8 +18,8 @@ Must be executed in directory with pom.xml.
 Custom repository can be defined in your _settings.xml_ file.
 
 ## Notes
-This will download artifact and all it's dependencies - if artifact has any.
-
+This will download artifact without its dependencies.
+If you want download dependencies omit exclusion from pom.xml.
 
 # Alternative solutions
 
