@@ -21,6 +21,12 @@
             <version>${dep.version}</version>
             <type>${dep.type}</type>
             <classifier>${dep.classifier}</classifier>
+            <exclusions> <!-- exclude transitive dependencies -->
+                <exclusion>
+                    <groupId>*</groupId>
+                    <artifactId>*</artifactId>
+                </exclusion>
+            </exclusions>
         </dependency>
     </dependencies>
 
